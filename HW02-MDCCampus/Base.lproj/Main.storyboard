@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,88 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hialeah" translatesAutoresizingMaskIntoConstraints="NO" id="18L-Qn-Sbs">
+                                <rect key="frame" x="-171.5" y="30" width="718" height="358"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcV-on-EoO">
+                                <rect key="frame" x="21" y="423" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeg-mM-TPh">
+                                <rect key="frame" x="21" y="458" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06l-9d-8TM">
+                                <rect key="frame" x="42" y="539" width="102" height="48"/>
+                                <state key="normal" title="Button" image="icon-previous"/>
+                                <connections>
+                                    <action selector="btnPreviousPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2B5-7t-Tch"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxW-4B-Sas">
+                                <rect key="frame" x="254" y="539" width="102" height="48"/>
+                                <state key="normal" title="Button" image="icon-next"/>
+                                <connections>
+                                    <action selector="btnNextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eH-iN-E1N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmS-Fn-Wal">
+                                <rect key="frame" x="102" y="423" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kkekekkekeeeeeeeeeeeeeeeeeeeeeeeeeeeeklklklklklklklk" textAlignment="natural" lineBreakMode="headTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rH-9b-Wq1">
+                                <rect key="frame" x="102" y="458" width="438.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OxW-4B-Sas" firstAttribute="top" secondItem="8rH-9b-Wq1" secondAttribute="bottom" constant="60" id="2dm-Wm-lnj"/>
+                            <constraint firstItem="QcV-on-EoO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="3TT-iq-oGG"/>
+                            <constraint firstItem="jeg-mM-TPh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="Eou-rt-FAy"/>
+                            <constraint firstItem="06l-9d-8TM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="IPe-Rm-MLU"/>
+                            <constraint firstItem="QcV-on-EoO" firstAttribute="top" secondItem="18L-Qn-Sbs" secondAttribute="bottom" constant="35" id="PwN-EF-OB4"/>
+                            <constraint firstItem="18L-Qn-Sbs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Sx8-k3-phK"/>
+                            <constraint firstItem="06l-9d-8TM" firstAttribute="top" secondItem="jeg-mM-TPh" secondAttribute="bottom" constant="60" id="W23-ky-4sV"/>
+                            <constraint firstItem="jeg-mM-TPh" firstAttribute="top" secondItem="QcV-on-EoO" secondAttribute="bottom" constant="14" id="XXZ-Oq-RDl"/>
+                            <constraint firstItem="GmS-Fn-Wal" firstAttribute="top" secondItem="18L-Qn-Sbs" secondAttribute="bottom" constant="35" id="Y7E-sg-p2D"/>
+                            <constraint firstItem="8rH-9b-Wq1" firstAttribute="leading" secondItem="jeg-mM-TPh" secondAttribute="trailing" constant="18" id="ZMP-hv-9b3"/>
+                            <constraint firstItem="18L-Qn-Sbs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="avs-o6-BOY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OxW-4B-Sas" secondAttribute="trailing" constant="19" id="bKZ-93-HhH"/>
+                            <constraint firstItem="8rH-9b-Wq1" firstAttribute="top" secondItem="GmS-Fn-Wal" secondAttribute="bottom" constant="14" id="ucd-jC-r3B"/>
+                            <constraint firstItem="GmS-Fn-Wal" firstAttribute="leading" secondItem="QcV-on-EoO" secondAttribute="trailing" constant="17" id="vxU-lA-FkX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnNext" destination="OxW-4B-Sas" id="jbX-dA-YA6"/>
+                        <outlet property="btnPrevious" destination="06l-9d-8TM" id="cOD-Za-kIR"/>
+                        <outlet property="campusAddress" destination="8rH-9b-Wq1" id="gFL-JC-Tnt"/>
+                        <outlet property="campusImg" destination="18L-Qn-Sbs" id="aXE-ce-xT5"/>
+                        <outlet property="campusName" destination="GmS-Fn-Wal" id="fCh-Qz-0rT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hialeah" width="718" height="358"/>
+        <image name="icon-next" width="48" height="48"/>
+        <image name="icon-previous" width="48" height="48"/>
+    </resources>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC40D2C71F954014006E8F77 /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = FC40D2C61F954014006E8F77 /* Campus.m */; };
 		FC4CE27B1F910F5700D77BC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CE27A1F910F5700D77BC0 /* AppDelegate.m */; };
 		FC4CE27E1F910F5700D77BC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CE27D1F910F5700D77BC0 /* ViewController.m */; };
 		FC4CE2811F910F5700D77BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4CE27F1F910F5700D77BC0 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC40D2C51F954014006E8F77 /* Campus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
+		FC40D2C61F954014006E8F77 /* Campus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
 		FC4CE2761F910F5700D77BC0 /* HW02-MDCCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW02-MDCCampus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4CE2791F910F5700D77BC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC4CE27A1F910F5700D77BC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				FC4CE2841F910F5700D77BC0 /* LaunchScreen.storyboard */,
 				FC4CE2871F910F5700D77BC0 /* Info.plist */,
 				FC4CE2881F910F5700D77BC0 /* main.m */,
+				FC40D2C51F954014006E8F77 /* Campus.h */,
+				FC40D2C61F954014006E8F77 /* Campus.m */,
 			);
 			path = "HW02-MDCCampus";
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC40D2C71F954014006E8F77 /* Campus.m in Sources */,
 				FC4CE27E1F910F5700D77BC0 /* ViewController.m in Sources */,
 				FC4CE2891F910F5700D77BC0 /* main.m in Sources */,
 				FC4CE27B1F910F5700D77BC0 /* AppDelegate.m in Sources */,
@@ -280,6 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "HW02-MDCCampus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HW02-MDCCampus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,6 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "HW02-MDCCampus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HW02-MDCCampus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
